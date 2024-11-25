@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARVIBE - Auto tirdzniecība</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Galvene -->
+    <header>
+        <h1>CARVIBE - Auto tirdzniecība</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Sākumlapa</a></li>
+                <li><a href="#information">Informācija</a></li>
+                <li><a href="#search">Meklēt</a></li>
+                <li><a href="#about">Par mums</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+        <!-- Valodu pārslēdzējs -->
+                <!-- Valodu pārslēdzējs -->
+                <div id="language-switcher">
+                    <a href="index-lv.html" class="lang-link">
+                        <img src="latvia.png" alt="Latviešu" class="lang-icon">
+                    </a>
+                    <a href="index-en.html" class="lang-link">
+                        <img src="russia.png" alt="English" class="lang-icon">
+                    </a>
+                    <a href="index-ru.html" class="lang-link">
+                        <img src="united-kingdom.png" alt="Русский" class="lang-icon">
+                    </a>
+                </div>
+        
+    </header>
+
+    <!-- Galvenais saturs -->
+    <main>
+        <!-- Sākumlapa -->
+        <section id="home">
+            <h2>Laipni lūdzam CARVIBE sistēmā!</h2>
+            <p>Meklē vai pārdod savu nākamo automašīnu ar mums.</p>
+        </section>
+
+        <!-- Autorizācija -->
+        <section id="login">
+            <h2>Autorizācija</h2>
+            <form id="loginForm">
+                <label for="email">E-pasts:</label>
+                <input type="email" id="email" name="email" placeholder="Ievadiet e-pastu" required>
+                <label for="password">Parole:</label>
+                <input type="password" id="password" name="password" placeholder="Ievadiet paroli" required>
+                <button type="submit">Ienākt</button>
+            </form>
+        </section>
+
+        <!-- Meklēšana -->
+        <section id="search">
+            <h2>Meklēt automašīnu</h2>
+            <form id="searchForm">
+                <label for="make">Marka:</label>
+                <input type="text" id="make" name="make" placeholder="Piem., Audi">
+                <label for="model">Modelis:</label>
+                <input type="text" id="model" name="model" placeholder="Piem., A4">
+                <label for="price">Cena līdz:</label>
+                <input type="number" id="price" name="price" placeholder="Ievadiet cenu">
+                <button type="submit">Meklēt</button>
+            </form>
+        </section>
+
+        <!-- Par mums -->
+        <section id="about">
+            <h2>Par mums</h2>
+            <p>CARVIBE ir jūsu uzticamais partneris auto tirdzniecībā.</p>
+        </section>
+
+        <!-- Sludinājuma pievienošana -->
+        <section id="sell">
+            <h2>Pievienot sludinājumu</h2>
+            <form id="sellForm">
+                <label for="category">Kategorija:</label>
+                <select id="category" name="category" required>
+                    <option value="sedans">Sedans</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Kravas auto</option>
+                </select>
+                <label for="description">Apraksts:</label>
+                <textarea id="description" name="description" placeholder="Aprakstiet automašīnu" required></textarea>
+                <label for="price">Cena:</label>
+                <input type="number" id="price" name="price" placeholder="Ievadiet cenu" required>
+                <button type="submit">Publicēt</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Kājene -->
+    <footer>
+        <p>&copy; 2024 CARVIBE. Visas tiesības aizsargātas.</p>
+    </footer>
+</body>
+</html>
